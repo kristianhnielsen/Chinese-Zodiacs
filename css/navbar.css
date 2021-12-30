@@ -3,7 +3,9 @@
     justify-content: space-around;
     align-items: center;
     margin: 5vh 5vw;
-
+    font-size: 5rem;
+    border-bottom: var(--main-red) solid 5px;
+    border-top: var(--main-red) solid 5px;
 }
 
 #banner img {
