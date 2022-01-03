@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <!-- <script src="../scripts/jquery-3.6.0.min.js"></script>  -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script> 
-    <script src="./scripts/script.js"></script>
     <title>Home - Chinese Zodiacs</title>
 </head>
 <body>
     <header>
         <nav></nav>
     </header>
-
+    
     <main>
-        
+        <div class="zodiac-calculator">
+            <input type="text" placeholder="Born in (YYYY)" id="year-input" >
+            <button type="button" id="find-zodiac-button">Find my zodiac!</button>
+            <p id="find-zodiac-result"></p>
+            
+        </div>
     </main>
-
+    
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
