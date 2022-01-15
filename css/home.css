@@ -34,3 +34,27 @@
     cursor: pointer;
     border-radius: 50%;
 }
+
+#great-race {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 15vw;
+    line-height: 1.7rem;
+    gap: 2rem;
+}
+#great-race strong {
+    color:var(--main-red);
+}
+#great-race hr {
+    color:var(--main-red);
+    margin: 2rem 0;
+}
+#great-race h2 {
+    text-align: center;    
+    color:var(--main-red);
+    font-size: 2rem;
+}
+
+#cat {
+    padding: 2rem 0;
+}
