@@ -15,6 +15,7 @@ main h1 {
 }
 #zodiac-icon img{
     border-radius: 50%;
+    width: 20%;
     background: var(--main-red);
     border: outset var(--main-gold) 15px;
 }
@@ -44,7 +45,7 @@ main h1 {
     color: white;
     background: var(--main-red);
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1rem;
     padding: 20px;
     border-radius: 20px;
     border: solid var(--main-gold) 5px;
@@ -60,7 +61,7 @@ main h1 {
 /* Content */
 section {
     margin: 10vh 15vw;
-    font-size: 2em;
+    font-size: 1rem;
     border-bottom: solid black 3px;
 }
 

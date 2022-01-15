@@ -6,7 +6,13 @@ $(document).ready(function() {
     
     function findAnimal() {
         let year = document.getElementById("year-input").value;
-        let modular = (year - 1900) % 12;
+        let minYear = 4
+        let modular = (year - minYear) % 12;
+        if (year < minYear) {
+            window.alert(`${year} is an invalid year, please try another.`);
+            return;
+        }
+        console.log(modular)
         const animalOrder = ['Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat', 'Monkey', 'Rooster', 'Dog', 'Pig'];
         
         document.getElementById("find-zodiac-result").innerHTML =  "You are born in the year of the " + "<strong>" + animalOrder[modular] + "</strong>";
@@ -35,7 +41,7 @@ $(document).ready(function() {
         // calculate years    
         const relevantYears = [];
         let year = initYear(animalFromDocName);
-        while ( relevantYears.length < 7 ) {
+        while ( relevantYears.length < 9 ) {
             relevantYears.push(year);
             year += 12;
         };
