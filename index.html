@@ -13,15 +13,19 @@
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav id="navbar"></nav>
     </header>
     
     <main>
         <div class="zodiac-calculator">
             <input type="text" placeholder="Born in (YYYY)" id="year-input" >
             <button type="button" id="find-zodiac-button">Find my zodiac!</button>
-            <p id="find-zodiac-result"></p>
-            
+            <div id="zodiac-result">
+                <p id="find-zodiac-result"></p>
+                <a id="search-result-icon" href="">
+                    <img id="search-result-icon-img" alt="search result zodiac icon" src="">
+                </a>
+            </div>
         </div>
     </main>
     
