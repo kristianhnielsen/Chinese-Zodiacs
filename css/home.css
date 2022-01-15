@@ -58,3 +58,9 @@
 #cat {
     padding: 2rem 0;
 }
+
+#credit {
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
+}
