@@ -22,7 +22,7 @@
 }
 
 #zodiac-selector img{
-    width: 90%;
+    width: 75%;
     padding: 5%;
     background-color: var(--main-red);
     border: outset var(--main-gold) 10px;

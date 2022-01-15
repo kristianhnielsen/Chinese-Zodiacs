@@ -13,6 +13,14 @@
     padding: 0.5rem;
 }
 
+#zodiac-result {
+    margin-top: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 #search-result-icon {
     display: flex;
     justify-content: center;

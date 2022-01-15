@@ -11,14 +11,12 @@ $(document).ready(function() {
         
         document.getElementById("find-zodiac-result").innerHTML =  "You are born in the year of the " + "<strong>" + animalOrder[modular] + "</strong>";
 
-        let searchResultIcon = document.createElement("img");
-        searchResultIcon.alt = "search result zodiac icon";
-        searchResultIcon.src = "./img/" + animalOrder[modular].toLowerCase() + ".png";
-        let searchResultIconAnchor = document.createElement('a');
-        searchResultIconAnchor.id = "search-result-icon";
-        searchResultIconAnchor.href = "./" + animalOrder[modular].toLowerCase() + ".html";
-        searchResultIconAnchor.appendChild(searchResultIcon)
-        document.getElementById("find-zodiac-result").after(searchResultIconAnchor);
+        const searchResultIcon = document.querySelector("#search-result-icon-img");
+        searchResultIcon.src = `./img/${animalOrder[modular].toLowerCase()}.png`;
+        const searchResultIconAnchor = document.querySelector('#search-result-icon');
+        searchResultIconAnchor.href = `./${animalOrder[modular].toLowerCase()}.html`;
+        document.querySelector('#zodiac-result').style.display = 'flex';
+        document.querySelector('#zodiac-result').style.justifyContent = 'center';
     }
     
     let documentName = document.location.pathname.split('/').slice(-1)[0];
