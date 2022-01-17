@@ -7,20 +7,41 @@
     <link rel="stylesheet" href="./css/background.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <script src="../scripts/jquery-3.6.0.min.js"></script> 
     <script src="./scripts/script.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script> 
     <title>Home - Chinese Zodiacs</title>
 </head>
 <body>
     <header>
-        <nav id="navbar"></nav>
+        <nav id="navbar">
+            <div id="top"></div>
+            <div id="banner">
+                <img src="../img/coin.png" alt="chinese coin">
+                <h1 >Chinese Zodiacs</h1>
+                <img src="../img/coin.png" alt="chinese coin">
+            </div>
+
+            <div id="zodiac-selector">
+                <a href="./index.html"><img src="../img/home.png" alt="home icon"></a>
+                <a href="./rat.html"><img src="../img/rat.png" alt="rat zodiac icon"></a>
+                <a href="./ox.html"><img src="../img/ox.png" alt="ox zodiac icon"></a>
+                <a href="./tiger.html"><img src="../img/tiger.png" alt="tiger zodiac icon"></a>
+                <a href="./rabbit.html"><img src="../img/rabbit.png" alt="rabbit zodiac icon"></a>
+                <a href="./dragon.html"><img src="../img/dragon.png" alt="dragon zodiac icon"></a>
+                <a href="./snake.html"><img src="../img/snake.png" alt="snake zodiac icon"></a>
+                <a href="./horse.html"><img src="../img/horse.png" alt="horse zodiac icon"></a>
+                <a href="./goat.html"><img src="../img/goat.png" alt="goat zodiac icon"></a>
+                <a href="./monkey.html"><img src="../img/monkey.png" alt="monkey zodiac icon"></a>
+                <a href="./rooster.html"><img src="../img/rooster.png" alt="rooster zodiac icon"></a>
+                <a href="./dog.html"><img src="../img/dog.png" alt="dog zodiac icon"></a>
+                <a href="./pig.html"><img src="../img/pig.png" alt="pig zodiac icon"></a>
+            </div>
+        </nav>
     </header>
     
     <main>
         <div class="zodiac-calculator">
             <input type="text" placeholder="Born in (YYYY)" id="year-input" >
-            <button type="button" id="find-zodiac-button">Find my zodiac!</button>
+            <button type="button" id="find-zodiac-button" onclick=findAnimal()>Find my zodiac!</button>
             <div id="zodiac-result">
                 <p id="find-zodiac-result"></p>
                 <a id="search-result-icon" href="">
